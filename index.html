@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript Mini Project</title>
+    <title>Quote Generator</title>
     <!-- title bar icon added -->
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=https://www.w3schools.com/"/>
-<!-- getting font icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=https://perchance.org/incorrect-quote-generator"
+    />
+    <!-- getting font icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -15,25 +19,33 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css "> -->
-   
+
     <!-- All css style files linked  -->
     <link rel="stylesheet" href="style.css" />
-
   </head>
 
   <body>
+    <div class="quoteGenerator">
+      <p class="text" id="text">
+        <i class="fa-solid fa-quote-left"></i>
+        What you are is what you have been.What you'll be is what you do now.
+        <i class="fa-solid fa-quote-right"></i>
+      </p>
+      <!-- <br /> -->
+      <div class="authorContainer">
+        <p class="author"><i class="fa-solid fa-at"></i>&nbsp; Buddha</p>
+      </div>
 
-    <div class="icon">
-      <img src="house-solid.svg" alt="This is a home" height="20px" width="30px" class="">
-      <p class="para">Going to rule out! </p>
+      <div class="buttons">
+        <button type="submit" class="bottmButton" id="twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </button>
 
-      
+        <button class="bottmButton" id="newQuote">New Quote</button>
+      </div>
     </div>
 
-
-
-
-    
+    <!-- <button type="submit"><i class="fa-brands fa-facebook"></i>Facebook</button> -->
     <!-- JS script -->
     <script src="script.js"></script>
   </body>
