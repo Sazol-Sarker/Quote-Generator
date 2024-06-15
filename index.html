@@ -25,28 +25,31 @@
   </head>
 
   <body>
-    <div class="quoteGenerator">
-      <p class="text" id="text">
+    <div class="quoteContainer" id="quoteContainer">
+      <!-- Quote -->
+      <div class="quoteText">
         <i class="fa-solid fa-quote-left"></i>
-        What you are is what you have been.What you'll be is what you do now.
+        <span id="quote"></span>
+
         <i class="fa-solid fa-quote-right"></i>
-      </p>
-      <!-- <br /> -->
-      <div class="authorContainer">
-        <p class="author"><i class="fa-solid fa-at"></i>&nbsp; Buddha</p>
       </div>
-
-      <div class="buttons">
-        <button type="submit" class="bottmButton" id="twitter">
-          <i class="fa-brands fa-x-twitter"></i>
+      <!-- Author -->
+      <div class="quoteAuthor">
+        <div id="author"></div>
+      </div>
+      <!-- Buttons -->
+      <div class="buttonContainer">
+        <button class="Button" id="twitter" title="Tweet this!">
+          <i class="fa-brands fa-twitter"></i>
         </button>
-
-        <button class="bottmButton" id="newQuote">New Quote</button>
+        <button class="Button" id="newQuote">New Quote</button>
       </div>
     </div>
-
-    <!-- <button type="submit"><i class="fa-brands fa-facebook"></i>Facebook</button> -->
-    <!-- JS script -->
+    <!-- loader -->
+    <div class="loader" id="loader">
+      
+    </div>
+    <!-- Js scripts -->
     <script src="script.js"></script>
   </body>
 </html>
